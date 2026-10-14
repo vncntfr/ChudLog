@@ -1,0 +1,22 @@
+{
+  "name": "chudlog",
+  "private": true,
+  "version": "0.0.0-dev",
+  "description": "ChudLog — aggressive daily accountability PWA (food / sleep / gym). Private v1 for a 10-person group.",
+  "workspaces": [
+    "shared",
+    "api",
+    "web"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev:api": "npm --workspace api run dev",
+    "dev:web": "npm --workspace web run dev",
+    "typecheck": "npm --workspaces run typecheck",
+    "test": "npm --workspaces run test",
+    "build": "npm --workspaces run build",
+    "migrate": "npm --workspace api run migrate"
+  }
+}

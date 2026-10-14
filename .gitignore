@@ -1,0 +1,13 @@
+node_modules/
+dist/
+*.local
+.env
+.env.*
+!.env.example
+data/
+/tmp/
+backups/
+coverage/
+.DS_Store
+*.log
+vite.config.ts.timestamp-*
