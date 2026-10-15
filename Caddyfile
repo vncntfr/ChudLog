@@ -1,13 +1,13 @@
 {$SITE_ADDRESS:chudlog.xyz} {
-  encode zstd gzip
+	encode zstd gzip
 
-  handle /api/* {
-    reverse_proxy api:8787
-  }
+	handle /api/* {
+		reverse_proxy api:8787
+	}
 
-  handle {
-    root * /srv
-    try_files {path} /index.html
-    file_server
-  }
+	handle {
+		root * /srv
+		try_files {path} /index.html
+		file_server
+	}
 }
