@@ -1,0 +1,14 @@
+{
+  "name": "chudlog",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ChudLog private accountability PWA frontend",
+  "workspaces": ["shared", "web"],
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "dev": "npm --workspace web run dev",
+    "typecheck": "npm --workspaces run typecheck",
+    "test": "npm --workspaces run test",
+    "build": "npm --workspaces run build"
+  }
+}
