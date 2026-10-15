@@ -9,6 +9,10 @@
     "dev": "npm --workspace web run dev",
     "typecheck": "npm --workspaces run typecheck",
     "test": "npm --workspaces run test",
-    "build": "npm --workspaces run build"
+    "build": "npm --workspaces run build",
+    "deploy:cloudflare": "wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "4.151.0"
   }
 }
